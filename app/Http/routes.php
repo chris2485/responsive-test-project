@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/lost', function () {
     return view('welcome');
 });
+
+Route::get('/', 'MainController@index');
 
 /*
 |--------------------------------------------------------------------------
